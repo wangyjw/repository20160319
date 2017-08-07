@@ -25,7 +25,7 @@ public class BaseController {
 
 	/**
 	 * 将前台传递过来的日期格式的字符串，自动转化为Date类型
-	 * 
+	 * git提交测试
 	 * @param binder
 	 * 
 	 */
