@@ -160,15 +160,15 @@ public class UserServiceImpl extends BaseServiceImpl implements UserServiceI {
 			q = "";
 		}
 		String hql = " from Syuser t where name like '%%" + q.trim() + "%%'";
-		List<Syuser> l = userDao.find(hql, 1, 10);
+//		List<Syuser> l = userDao.find(hql, 1, 10);
 		List<User> ul = new ArrayList<User>();
-		if (l != null && l.size() > 0) {
-			for (Syuser syuser : l) {
-				User u = new User();
-				BeanUtils.copyProperties(syuser, u);
-				ul.add(u);
-			}
-		}
+//		if (l != null && l.size() > 0) {
+//			for (Syuser syuser : l) {
+//				User u = new User();
+//				BeanUtils.copyProperties(syuser, u);
+//				ul.add(u);
+//			}
+//		}
 		return ul;
 	}
 
